@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="A calm weekly study planner"><title>StudyFlow — Weekly Study Planner</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<div class="app">
+<header><div><p class="eyebrow">STUDYFLOW</p><h1>Plan the week. Protect the focus.</h1><p class="sub">A calm study planner built around weekly goals, focused sessions, and visible momentum.</p></div><button id="theme" aria-label="Toggle theme">☾</button></header>
+<section class="hero"><div><span id="weekLabel"></span><h2 id="focusTitle">This week</h2><p id="focusText">Turn priorities into focused sessions.</p></div><div class="ring"><strong id="percent">0%</strong><span>complete</span></div></section>
+<main>
+<section class="panel"><div class="panelHead"><div><span class="label">WEEKLY GOALS</span><h3>What matters this week</h3></div><button class="primary" id="addGoal">+ Add goal</button></div><div id="goals" class="goals"></div></section>
+<section class="panel"><div class="panelHead"><div><span class="label">FOCUS PLAN</span><h3>Upcoming sessions</h3></div><button class="ghost" id="addSession">+ Session</button></div><div id="sessions" class="sessions"></div></section>
+<section class="panel"><div class="panelHead"><div><span class="label">MOMENTUM</span><h3>Weekly progress</h3></div><span id="count" class="pill">0 / 0</span></div><div class="bars" id="bars"></div></section>
+</main>
+</div>
+<dialog id="modal"><form method="dialog" id="form"><button class="close" value="cancel">×</button><h3 id="modalTitle">Add goal</h3><input id="title" required placeholder="e.g. Finish DSA Module 3"><select id="kind"><option>Goal</option><option>Focus session</option></select><select id="day"><option>Monday</option><option>Tuesday</option><option>Wednesday</option><option>Thursday</option><option>Friday</option><option>Saturday</option><option>Sunday</option></select><button class="primary" value="default">Add to plan</button></form></dialog>
+<script src="app.js"></script></body></html>
